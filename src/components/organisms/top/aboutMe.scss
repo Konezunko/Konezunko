@@ -5,6 +5,7 @@
     .about-content {
         max-width: 800px;
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     .section-title {
@@ -14,6 +15,10 @@
         margin-bottom: 30px;
         position: relative;
         padding-bottom: 10px;
+
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+        }
 
         &::after {
             content: '';
@@ -62,6 +67,10 @@
             line-height: 1.8;
             margin-bottom: 1.2rem;
             color: #333;
+
+            @media (max-width: 768px) {
+                font-size: 1rem;
+            }
         }
     }
 

@@ -29,11 +29,19 @@ const Logo = styled(Link)`
     color: #ccc;
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const NavLinks = styled.div`
   display: flex;
   gap: 25px;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 
   a {
     color: #fff;
@@ -41,6 +49,10 @@ const NavLinks = styled.div`
     font-weight: 500;
     font-size: 1.1rem;
     transition: color 0.2s;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
 
     &:hover {
       color: #aaa;
