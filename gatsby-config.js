@@ -2,9 +2,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/Konezunko",
   siteMetadata: {
     title: `hazimete`,
-    siteUrl: `https://konezunko.github.io/`,
+    siteUrl: `https://konezunko.github.io/Konezunko/`,
     
   },
   plugins: [

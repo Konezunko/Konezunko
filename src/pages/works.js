@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import Layout from '../components/Layout';
 import { Container } from 'react-bootstrap';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -94,7 +95,7 @@ const WorksPage = () => {
                 <p>3Dアクションゲームのプロジェクトです。Unreal Engine5を使用して開発されています。</p>
                 <div className="video-wrapper">
                   <video autoPlay loop muted playsInline>
-                    <source src="/videos/muropyon3d.mp4" type="video/mp4" />
+                    <source src={withPrefix("/videos/muropyon3d.mp4")} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -106,7 +107,7 @@ const WorksPage = () => {
                 <p>サバイバルホラーゲームのプロトタイプです。AIとリソース管理に焦点を当てています。Unreal Engine5を使用して開発されています。</p>
                 <div className="video-wrapper">
                   <video autoPlay loop muted playsInline>
-                    <source src="/videos/Zombie Survival.mp4" type="video/mp4" />
+                    <source src={withPrefix("/videos/Zombie Survival.mp4")} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -118,7 +119,7 @@ const WorksPage = () => {
                 <p>僕が大学二年の時に初めて開発したゲームです。Unityで作られています。レトロスタイルの2Dプラットフォーマーです。ピクセルアートとシンプルな操作性を追求しました。</p>
                 <div className="video-wrapper">
                   <video autoPlay loop muted playsInline>
-                    <source src="/videos/MUROPYON GAME.mp4" type="video/mp4" />
+                    <source src={withPrefix("/videos/MUROPYON GAME.mp4")} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -130,7 +131,7 @@ const WorksPage = () => {
                 <p style={{ marginBottom: '20px' }}>学内で見つかった落とし物を管理しいつでも見られるようにしたアプリです。貴重品についてはプライバシーに配慮しながら開発しました。</p>
                 <div className="video-wrapper" style={{ backgroundColor: '#f0f0f0' }}>
                   <video autoPlay loop muted playsInline style={{ objectFit: 'contain' }}>
-                    <source src="/videos/otoshimono.mp4" type="video/mp4" />
+                    <source src={withPrefix("/videos/otoshimono.mp4")} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
