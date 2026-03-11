@@ -31,7 +31,10 @@ const Logo = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;
 
@@ -40,7 +43,10 @@ const NavLinks = styled.div`
   gap: 25px;
 
   @media (max-width: 768px) {
-    gap: 15px;
+    gap: 12px;
+  }
+  @media (max-width: 480px) {
+    gap: 8px;
   }
 
   a {
@@ -51,7 +57,10 @@ const NavLinks = styled.div`
     transition: color 0.2s;
 
     @media (max-width: 768px) {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 0.75rem;
     }
 
     &:hover {
