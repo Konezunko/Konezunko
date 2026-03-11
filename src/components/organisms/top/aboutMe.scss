@@ -1,0 +1,86 @@
+#aboutMe {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+
+    .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        display: inline-block;
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #0044cc;
+        }
+    }
+
+    .social-row {
+        margin-bottom: 35px;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+
+        a {
+            color: #333;
+            font-size: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.2s, color 0.2s;
+
+            &:hover {
+                color: #0044cc;
+                transform: translateY(-3px);
+            }
+
+            img {
+                transition: transform 0.2s;
+            }
+
+            &:hover img {
+                filter: brightness(1.2);
+            }
+        }
+    }
+
+    .text-content {
+        p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            color: #333;
+        }
+    }
+
+    .btn-row {
+        margin-top: 30px;
+
+        .btn-about {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #333;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #0044cc;
+                text-decoration: none;
+            }
+        }
+    }
+}

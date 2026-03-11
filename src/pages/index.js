@@ -1,22 +1,79 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Kv from "../components/organisms/top/kv";
 import AboutMe from "../components/organisms/top/aboutMe";
 import Skills from "../components/organisms/top/skills";
-import Works from "../components/organisms/top/works"; // Works セクションをインポート
-import { Container, Row, Col } from "react-bootstrap";
-import BlogItem from "../components/organisms/top/blogitem";
+import Works from "../components/organisms/top/works";
+import Achievements from "../components/organisms/top/achievements";
+import { Container } from "react-bootstrap";
+import styled from "@emotion/styled";
+
+const BlogHeader = styled.h3`
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #0044cc;
+  }
+`;
+
+const BlogList = styled.div`
+  border-top: 1px solid #eee;
+`;
+
+const BlogListItem = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+`;
+
+const BlogDate = styled.span`
+  font-size: 0.95rem;
+  color: #888;
+  min-width: 110px;
+  font-family: 'Roboto', sans-serif;
+`;
+
+const BlogTitleLink = styled(Link)`
+  font-size: 1.1rem;
+  color: #4477cc;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+    color: #3366bb;
+  }
+`;
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost(sort: { fields: title, order: ASC }) {
+      allContentfulBlogPost(sort: { fields: createdAt, order: DESC }) {
         edges {
           node {
+            id
             title
             slug
-            createdAt(formatString: "YYYY/MM/DD")
+            createdAt(formatString: "YYYY-MM-DD")
           }
         }
       }
@@ -28,22 +85,13 @@ const IndexPage = () => {
       <Kv />
       <AboutMe />
       <Skills />
-      <Works /> {/* Works セクションをここに追加 */}
-      <Container>
-        <Row>
-          {data.allContentfulBlogPost.edges.map((edge, index) => (
-            <Col sm={4} key={index}>
-              <BlogItem
-                title={edge.node.title}
-                date={edge.node.createdAt}
-                link={`/blog/${edge.node.slug}`}
-              />
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <Works />
+      <Achievements />
+
+
     </Layout>
   );
 };
 
 export default IndexPage;
+

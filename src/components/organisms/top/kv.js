@@ -1,20 +1,26 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import './kv.scss'; 
+import { Container } from 'react-bootstrap';
+import './kv.scss';
 
 function Kv() {
+  const scrollToAboutMe = () => {
+    const aboutMeSection = document.getElementById('aboutMe');
+    if (aboutMeSection) {
+      aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="wrap">
-      <div className="overlay"></div>
-      <Container>
-        <Row>
-          <Col sm={12} className="mx-auto">
-            <div className="site-heading">
-              <h1>Personal blog</h1>
-              <span>Made by Hironori Takeuchi</span>
-            </div>
-          </Col>
-        </Row>
+    <div className="kv-wrap">
+      <Container className="h-100 d-flex flex-column align-items-center justify-content-center">
+        <div className="site-heading">
+          <h1>Hiro.exe</h1>
+          <p className="subtitle">Student / Programmer / Skier</p>
+
+        </div>
+        <div className="scroll-arrow" onClick={scrollToAboutMe}>
+          <i className="fas fa-chevron-down"></i>
+        </div>
       </Container>
     </div>
   );

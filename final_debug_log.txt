@@ -1,0 +1,270 @@
+
+> hazimete@1.0.0 develop
+> cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop
+
+success compile gatsby files - 3.372s
+
+[2K[1A[2K[Gsuccess load gatsby config - 0.064s
+
+[2K[1A[2K[Gsuccess load plugins - 6.830s
+
+[2K[1A[2K[Gsuccess onPreInit - 0.008s
+
+[2K[1A[2K[Gsuccess initialize cache - 0.280s
+
+[2K[1A[2K[Gsuccess copy gatsby files - 2.331s
+
+[2K[1A[2K[Gsuccess Compiling Gatsby Functions - 1.860s
+
+[2K[1A[2K[Gsuccess onPreBootstrap - 1.961s
+
+[2K[1A[2K[Gsuccess createSchemaCustomization - 0.187s
+
+[2K[1A[2K[Gsuccess Contentful: Sync all items - 0.104s - 6/6 57.88/s
+
+[2K[1A[2K[Gsuccess Contentful: Fetch data - 0.345s
+
+[2K[1A[2K[Ginfo Contentful: 1 new entries
+
+[2K[1A[2K[Ginfo Contentful: 2 updated entries
+
+[2K[1A[2K[Ginfo Contentful: 0 deleted entries
+
+[2K[1A[2K[Ginfo Contentful: 0 cached entries
+
+[2K[1A[2K[Ginfo Contentful: 3 new assets
+
+[2K[1A[2K[Ginfo Contentful: 0 updated assets
+
+[2K[1A[2K[Ginfo Contentful: 0 cached assets
+
+[2K[1A[2K[Ginfo Contentful: 0 deleted assets
+
+[2K[1A[2K[Ginfo Creating 3 Contentful Blog Post nodes
+
+[2K[1A[2K[Ginfo Creating 3 Contentful asset nodes
+
+[2K[1A[2K[Gsuccess Contentful: Create nodes - 0.018s
+
+[2K[1A[2K[Gsuccess Contentful: Process data - 0.034s
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess source and transform nodes - 1.326s
+
+[2K[1A[2K[Gsuccess building schema - 0.471s
+
+[2K[1A[2K[Gsuccess createPages - 0.062s
+
+[2K[1A[2K[Gsuccess createPagesStatefully - 0.230s
+
+[2K[1A[2K[Ginfo Total nodes: 90, SitePage nodes: 16 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.000s
+
+[2K[1A[2K[Gsuccess write out redirect data - 0.004s
+
+[2K[1A[2K[Gsuccess onPostBootstrap - 0.001s
+
+[2K[1A[2K[Ginfo bootstrap finished - 26.825s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.001s
+
+[2K[1A[2K[Gwarn Could not find image "../../../images/gatsby-icon.png" in
+"C:/Users/konez/gatsby/src/components/organisms/top/works.js". Looked for
+C:\Users\konez\gatsby\src\images\gatsby-icon.png.
+
+[2K[1A[2K[Gwarn Could not find image "../../../images/muropyonngame.png" in
+"C:/Users/konez/gatsby/src/components/organisms/top/works.js". Looked for
+C:\Users\konez\gatsby\src\images\muropyonngame.png.
+
+[2K[1A[2K[Gwarn Deprecated syntax of sort and/or aggregation field arguments were found in
+your query (see https://gatsby.dev/graphql-nested-sort-and-aggregate). Query was
+ automatically converted to a new syntax. You should update query in your code.
+
+File: C:/Users/konez/gatsby/src/pages/index.js
+
+Current query:
+
+query staticCUserskonezgatsbysrcpagesindexJs2239964019 {
+  allContentfulBlogPost(sort: {fields: createdAt, order: DESC}) {
+    edges {
+      node {
+        id
+        title
+        slug
+        createdAt(formatString: "YYYY-MM-DD")
+      }
+    }
+  }
+}
+
+Converted query:
+
+query staticCUserskonezgatsbysrcpagesindexJs2239964019 {
+  allContentfulBlogPost(sort: {createdAt: DESC}) {
+    edges {
+      node {
+        id
+        title
+        slug
+        createdAt(formatString: "YYYY-MM-DD")
+      }
+    }
+  }
+}
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL.VALIDATION
+
+There was an error in your GraphQL query:
+
+Cannot query field "body" on type "ContentfulBlogPostBody".
+
+If you don't expect "body" to exist on the type "ContentfulBlogPostBody" it is
+most likely a typo. However, if you expect "body" to exist there are a couple of
+ solutions to common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node/gatsby-config, please try a restart of your development server.
+- You want to optionally use your field "body" and right now it is not used
+anywhere.
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields.
+
+File: src\templates\blogDetail.js:72:9
+
+See our docs page for more info on this error:
+https://gatsby.dev/creating-type-definitions
+
+
+[2K[1A[2K[Gfailed extract queries from components - 1.493s
+
+[2K[1A[2K[Gsuccess write out requires - 0.033s
+
+[2K[1A[2K[Gsuccess Running gatsby-plugin-sharp.IMAGE_PROCESSING jobs - 0.766s - 4/4 5.22/s
+
+[2K[1A[2K[Gwarn Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly:
+https://github.com/browserslist/update-db#readme
+
+[2K[1A[2K[G
+ ERROR  UNKNOWN
+
+Module not found: Error: Can't resolve
+'C:/Users/konez/gatsby/.cache/caches/gatsby-plugin-image/3011995888.json' in
+'C:\Users\konez\gatsby\src\components\organisms\top'
+
+
+[2K[1A[2K[G
+[0m
+[0m  [0m[97m[41mModuleNotFoundError[0m[37m[41m:[0m[37m[41m [0m[97m[41mModule not found: Error: Can't resolve 'C:/Users/konez/ga[0m
+  [0m[97m[41mtsby/.cache/caches/gatsby-plugin-image/3011995888.json' in 'C:\Users\konez\gat[0m
+  [0m[97m[41msby\src\components\organisms\top'[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mCompilation.js[0m[90m:[0m[93m2022[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/Compilation.js:2022:28[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m817[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:817:13[0m
+[0m  [0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m275[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:275:22[0m
+[0m  [0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m448[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:448:22[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m118[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:118:11[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m689[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:689:25[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m893[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:893:8[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m1013[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:1013:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93masync.js[0m[90m:[0m[93m6883[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[neo-async]/async.js:6883:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m996[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:996:45[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mResolver.js[0m[90m:[0m[93m372[0m[37m [0m[37mfinishWithoutResolve[0m
+[0m  [0m  [0m[90m[gatsby]/[enhanced-resolve]/lib/Resolver.js:372:11[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mResolver.js[0m[90m:[0m[93m461[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[enhanced-resolve]/lib/Resolver.js:461:15[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mResolver.js[0m[90m:[0m[93m519[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[enhanced-resolve]/lib/Resolver.js:519:5[0m
+[0m  [0m
+[0m  [0m
+[0m
+
+[2K[1A[2K[G
+ ERROR  UNKNOWN
+
+Module not found: Error: Can't resolve
+'C:/Users/konez/gatsby/.cache/caches/gatsby-plugin-image/4145339415.json' in
+'C:\Users\konez\gatsby\src\components\organisms\top'
+
+
+[2K[1A[2K[G
+[0m
+[0m  [0m[97m[41mModuleNotFoundError[0m[37m[41m:[0m[37m[41m [0m[97m[41mModule not found: Error: Can't resolve 'C:/Users/konez/ga[0m
+  [0m[97m[41mtsby/.cache/caches/gatsby-plugin-image/4145339415.json' in 'C:\Users\konez\gat[0m
+  [0m[97m[41msby\src\components\organisms\top'[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mCompilation.js[0m[90m:[0m[93m2022[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/Compilation.js:2022:28[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m817[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:817:13[0m
+[0m  [0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m275[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:275:22[0m
+[0m  [0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m448[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:448:22[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m118[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:118:11[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m689[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:689:25[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m893[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:893:8[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m1013[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:1013:5[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93masync.js[0m[90m:[0m[93m6883[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[neo-async]/async.js:6883:13[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mNormalModuleFactory.js[0m[90m:[0m[93m996[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[webpack]/lib/NormalModuleFactory.js:996:45[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mResolver.js[0m[90m:[0m[93m372[0m[37m [0m[37mfinishWithoutResolve[0m
+[0m  [0m  [0m[90m[gatsby]/[enhanced-resolve]/lib/Resolver.js:372:11[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mResolver.js[0m[90m:[0m[93m461[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[enhanced-resolve]/lib/Resolver.js:461:15[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mResolver.js[0m[90m:[0m[93m519[0m[37m [0m
+[0m  [0m  [0m[90m[gatsby]/[enhanced-resolve]/lib/Resolver.js:519:5[0m
+[0m  [0m
+[0m  [0m
+[0m
+
+[2K[1A[2K[Gnot finished Building development bundle - 1.985s
+

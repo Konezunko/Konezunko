@@ -1,0 +1,8 @@
+
+> hazimete@1.0.0 develop
+> cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop
+
+
+Something is already running at port 8000
+
+[?25l[2K[1G[36m?[39m [1mWould you like to run the app at another port instead?[22m [90mﾂｻ[39m [90m(Y/n)[39m
