@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `hazimete`,
-    siteUrl: `https://konezunko.github.io/gatsby/`,
+    siteUrl: `https://konezunko.github.io/`,
     
   },
   plugins: [
