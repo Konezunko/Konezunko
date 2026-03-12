@@ -192,6 +192,22 @@ const WorksPage = () => {
                 </div>
               </div>
             </div>
+            <div className="work-item">
+              <div className="work-content">
+                <h4>株式会社サンプル コーポレートサイト</h4>
+                <p style={{ marginBottom: '20px' }}>ReactとGatsbyを使用したコーポレートサイトの受託開発。SEO対策と高速なページスピードを重視して制作しました。</p>
+                <div className="image-wrapper">
+                  <StaticImage
+                    src="../images/No_Image.png"
+                    alt="No Image"
+                    placeholder="blurred"
+                    layout="constrained"
+                    aspectRatio={16 / 9}
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </WorksWrapper>
       </Container>

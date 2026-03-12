@@ -6,6 +6,8 @@ import AboutMe from "../components/organisms/top/aboutMe";
 import Skills from "../components/organisms/top/skills";
 import Works from "../components/organisms/top/works";
 import Achievements from "../components/organisms/top/achievements";
+import Services from "../components/organisms/top/services";
+import Contact from "../components/organisms/top/contact";
 import { Container } from "react-bootstrap";
 import styled from "@emotion/styled";
 
@@ -85,10 +87,10 @@ const IndexPage = () => {
       <Kv />
       <AboutMe />
       <Skills />
+      <Services />
       <Works />
       <Achievements />
-
-
+      <Contact />
     </Layout>
   );
 };
