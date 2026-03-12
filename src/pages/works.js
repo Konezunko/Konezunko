@@ -155,22 +155,6 @@ const WorksPage = () => {
             </div>
             <div className="work-item">
               <div className="work-content">
-                <h4>医療機関向けAIマニュアルアプリ</h4>
-                <p style={{ marginBottom: '20px' }}>現在開発中の医療機関向けAIマニュアルアプリで、私の父が監修しています。</p>
-                <div className="image-wrapper">
-                  <StaticImage
-                    src="../images/medical.png"
-                    alt="医療機関向けAIマニュアルアプリ"
-                    placeholder="blurred"
-                    layout="constrained"
-                    aspectRatio={16 / 9}
-                    objectFit="cover"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="work-item">
-              <div className="work-content">
                 <h4>室蘭工業大学 大学祭公式HP</h4>
                 <p style={{ marginBottom: '20px' }}>第65回工大祭（室蘭工業大学大学祭）の公式ホームページ制作。デザインから実装まで携わりました。</p>
                 <div className="image-wrapper">
