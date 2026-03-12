@@ -116,7 +116,7 @@ const WorksPage = () => {
             <div className="work-item">
               <div className="work-content">
                 <h4>MUROPYON GAME</h4>
-                <p>僕が大学二年の時に初めて開発したゲームです。Unityで作られています。レトロスタイルの2Dプラットフォーマーです。ピクセルアートとシンプルな操作性を追求しました。</p>
+                <p>私が大学二年の時に初めて開発したゲームです。Unityで作られています。レトロスタイルの2Dプラットフォーマーです。ピクセルアートとシンプルな操作性を追求しました。</p>
                 <div className="video-wrapper">
                   <video autoPlay loop muted playsInline preload="auto" controls>
                     <source src={withPrefix("/videos/muropyon_game.mp4")} type="video/mp4" />
@@ -166,6 +166,29 @@ const WorksPage = () => {
                     aspectRatio={16 / 9}
                     objectFit="cover"
                   />
+                </div>
+              </div>
+            </div>
+            <div className="work-item">
+              <div className="work-content">
+                <h4>室蘭工業大学 大学祭公式HP</h4>
+                <p style={{ marginBottom: '20px' }}>第65回工大祭（室蘭工業大学大学祭）の公式ホームページ制作。デザインから実装まで携わりました。</p>
+                <div className="image-wrapper">
+                  <a href="https://mit-fes.com/" target="_blank" rel="noopener noreferrer">
+                    <StaticImage
+                      src="../images/mit_fes.png"
+                      alt="室蘭工業大学 大学祭公式HP"
+                      placeholder="blurred"
+                      layout="constrained"
+                      aspectRatio={16 / 9}
+                      objectFit="cover"
+                    />
+                  </a>
+                </div>
+                <div style={{ marginTop: '10px', textAlign: 'right' }}>
+                  <a href="https://mit-fes.com/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85rem', color: '#0044cc' }}>
+                    サイトを見る <i className="fas fa-external-link-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>

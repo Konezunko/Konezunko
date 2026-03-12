@@ -141,6 +141,21 @@ const Works = () => {
               <WorkCard>
                 <div className="image-wrapper">
                   <StaticImage
+                    src='../../../images/mit_fes.png'
+                    alt='室蘭工業大学 大学祭公式HP'
+                    placeholder='blurred'
+                    layout='constrained'
+                    aspectRatio={16 / 9}
+                    objectFit="cover"
+                  />
+                </div>
+                <h4>室蘭工業大学 大学祭公式HP</h4>
+              </WorkCard>
+            </div>
+            <div>
+              <WorkCard>
+                <div className="image-wrapper">
+                  <StaticImage
                     src='../../../images/3.png'
                     alt='MUROPYON GAME'
                     placeholder='blurred'
