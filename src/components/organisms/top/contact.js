@@ -91,7 +91,7 @@ const Contact = () => {
         
         <FormWrapper>
           <Form 
-            action="https://formspree.io/f/YOUR_FORM_ID" // Placeholder
+            action="https://formspree.io/f/xqeyqjjq" 
             method="POST"
           >
             <Form.Group controlId="formName">
